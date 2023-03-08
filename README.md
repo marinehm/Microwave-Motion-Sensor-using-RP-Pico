@@ -1,0 +1,3 @@
+I just wanted to share this with others...
+I created a motion sensor to turn on an overhead light in the shed used to store my motorcycle off the street,
+with the least possible code. Totally HANDS-FREE !  sleep(420) =7 minutes; was my fight against my personal OCD which most people would use 5, 10, 15, 20 etc minutes.
