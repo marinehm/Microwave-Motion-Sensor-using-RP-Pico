@@ -1,0 +1,26 @@
+I just wanted to share this with others...
+I created a motion sensor to turn on an overhead light in the shed used to store my motorcycle off the street,
+with the least possible code. Totally HANDS-FREE! sleep(420) =7 minutes; was my fight against my personal OCD which most people would use 5, 10, 15, 20 etc minutes.
+
+My next project will be to publish the status of the sensor to MQTT using a Pico W
+
+`#Raspberry Pi Pco
+#HW-MS03 V.06 Microwave Motion Sensor
+#Lolin Relay: REPLACE led WTH relay
+#By Nick Sebring, 03/07/2023
+
+from machine import Pin
+from time import sleep
+
+pir = Pin(16, Pin.IN)
+led = Pin(22, Pin.OUT) #25=onboard led
+
+def motion():
+    if pir.value() ==1:
+        led.on()
+        sleep(420)
+    else:
+        led.off()
+
+while True:
+motion()`
