@@ -1,6 +1,6 @@
 ##Raspberry Pi Pco
 #HW-MS03 V.06 Microwave Motion Sensor
-#Lolin Relay: REPLACE led WTH relay
+#Lolin Relay: REPLACE led WITH relay
 #By Nick Sebring, 03/07/2023
 
 from machine import Pin
